@@ -1,0 +1,16 @@
+props.navigation.navigate({ routeName: "CategoryMeals" })
+
+Or we can write it like this  
+
+props.navigation.navigate("CategoryMeals")
+
+Or we can use push
+
+props.navigation.push("MealDetails"); now push we use it if we want to show the current screen but with diffrent content for example ! 
+
+props.navigation.pop(); //to return us to the prev stack
+props.navigation.goBack(); //same to return us to the prev stack
+
+props.navigation.popToTop(); //this will return me to the orgin stack
+
+props.navigation.replace({ routeName: "CategoryMeals" }) //So this will replace the current stack so it is like remove the current and add the CategoryMeals so you can not go back then! we Can use it for login screen for example
